@@ -2,6 +2,7 @@
     box-sizing: border-box;
     padding: 0;
     margin: 0;
+    font-family:Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
 }
 
 body {
@@ -10,7 +11,6 @@ body {
 
 .header {
     padding: 20px;
-    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
     background-color:honeydew;
     color:seagreen;
 }
@@ -25,11 +25,9 @@ body {
     padding-top: 15px;
     margin-right: 20px;
     float: right;
-    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
     font-size: 20px;
 }
 
-/* created nav a section to help control navigation bar*/
 nav a {
     display: inline-block;
     padding: 20px;
@@ -38,7 +36,6 @@ nav a {
     align-items: flex-end;
 }
 
-/* have multiple a's - need to change some - lower on page, and header */
 a {
     color:purple;
     text-decoration: none;
@@ -48,14 +45,14 @@ p {
     font-size: 16px;
 }
 
-.hero {
+/* .hero {
     height: 800px;
     width: 100%;
     margin-bottom: 25px;
     background-image: url("../images/digital-marketing-meeting.jpg");
     background-size: cover;
     background-position: center;
-}
+} */
 
 .float-left {
     float: left;
@@ -73,30 +70,9 @@ p {
     margin-left: 20px;
 }
 
-.benefits {
-    margin-right: 20px;
-    padding: 20px;
-    clear: both;
-    float: right;
-    width: 20%;
-    height: 100%;
-    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-    background-color: #2589bd;
-}
-
-}
-
-.body-background {
-    margin-bottom: 20px;
-    padding: 50px;
-    height: 300px;
-    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-    background-color:seagreen;
-    color: #ffffff;
-}
-
 img {
     max-height: 200px;
+    align-items: center;
 }
 
 h2 {
@@ -107,7 +83,6 @@ h2 {
 .footer {
     padding: 30px;
     clear: both;
-    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
     text-align: center;
 }
 .footer h2 {
@@ -115,19 +90,44 @@ h2 {
 }
 
 .profile-photo {
-    box-sizing: border-box;    
+    box-sizing: border-box;  
+    align-items: center;  
 }
+
+.project {
+    border-style: solid;
+    border-width: 1px;
+    border-radius: 50px;
+    padding: 10px;
+    flex: 0 0 300px;
+    transform: rotate(5deg);
+    box-shadow: 10px 10px 5px #aaaaaa;
+    margin: 20px;
+  }
+  
+  .project a {
+    border-radius: 50px 50px 0px 0px;
+    padding: 20px;
+  }
+  
+  .project p {
+    text-align: center;
+  }
+  
+  .project img {
+    width: 100%;
+  }
 
     /* For responsive layout - added media query for a 2 column layout instead of 4 column layout. */
 @media screen and (max-width: 900px) {
-    .column {
+    .project {
         width: 100%;
     }
 }
 
 /* For responsive layout - added media query for a stack of all items instead fo 2 columns */
 @media screen and (max-width: 600px) {
-    .column {
+    .project {
         width: 100%;
     }
 }
