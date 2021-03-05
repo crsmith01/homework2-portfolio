@@ -5,14 +5,14 @@
 }
 
 body {
-    background-color: #d9dcd6;
+    background-color:black;
 }
 
 .header {
     padding: 20px;
     font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
-    background-color: #2a607c;
-    color: #ffffff;
+    background-color:honeydew;
+    color:seagreen;
 }
 
 .header h1 {
@@ -20,9 +20,6 @@ body {
     font-size: 48px;
 }
 
-.header h1 .seo {
-    color: #d9dcd6;
-}
 
 .header div {
     padding-top: 15px;
@@ -41,8 +38,9 @@ nav a {
     align-items: flex-end;
 }
 
+/* have multiple a's - need to change some - lower on page, and header */
 a {
-    color: #ffffff;
+    color:purple;
     text-decoration: none;
 }
 
@@ -111,7 +109,7 @@ p {
     padding: 50px;
     height: 300px;
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-    background-color: #0072bb;
+    background-color:seagreen;
     color: #ffffff;
 }
 
