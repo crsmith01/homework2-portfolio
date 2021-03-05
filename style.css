@@ -133,3 +133,19 @@ h2 {
 .footer h2 {
     font-size: 20px;
 }
+
+
+
+    /* For responsive layout - added media query for a 2 column layout instead of 4 column layout. */
+@media screen and (max-width: 900px) {
+    .column {
+        width: 100%;
+    }
+}
+
+/* For responsive layout - added media query for a stack of all items instead fo 2 columns */
+@media screen and (max-width: 600px) {
+    .column {
+        width: 100%;
+    }
+}
