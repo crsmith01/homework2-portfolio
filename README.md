@@ -3,42 +3,39 @@
 ## User Story
 
 ```
-AS A marketing agency
-I WANT a codebase that follows accessibility standards
-SO THAT our own site is optimized for search engines.
+AS A potential employee
+I WANT to create a deployed portfolio of work sampels for potential employers to view
+SO THAT THEY can review samples of my work and assess whether I am a good candidate for an open position.
 ```
+
 
 ## Acceptance Criteria
 
+These are the critical requirements necessary to develop a portfolio that satisfies a typical hiring manager’s needs:
+
 ```
-GIVEN a webpage meets accessibility standards
-WHEN I view the source code
-THEN I find semantic HTML elements
-WHEN I view the structure of the HTML elements
-THEN I find that the elements follow a logical structure independent of styling and positioning
-WHEN I view the image elements
-THEN I find accessible alt attributes
-WHEN I view the heading attributes
-THEN they fall in sequential order
-WHEN I view the title element
-THEN I find a concise, descriptive title
+GIVEN they need to sample a potential employee's previous work
+1. WHEN they load my portfolio,
+    THEN they am presented with my name, a recent photo, and links to sections about me, my work, and how to contact me.
+2. WHEN they click one of the links in the navigation,
+    THEN the UI scrolls to the corresponding section.
+3. WHEN they click on the link to the section about my work,
+    THEN the UI scrolls to a section with titled images of my applications.
+4. WHEN they am presented with my first application,
+    THEN that application's image should be larger in size than the others.
+5. WHEN they click on the images of the applications,
+    THEN they am taken to that deployed application.
+6. WHEN they resize the page or view the site on various screens and devices
+    THEN they are presented with a responsive layout that adapts to their viewport.
 ```
 
-## Mock-Up
+**Note: Since I do not currently have enough web applications to showcase at this point, I used placeholder images and names for now. I will change them to real applications as I create them later in the course.
 
-The following image shows the web application's appearance and functionality:
-
-![The portfolio webpage includes _____________________a navigation bar, a header image, and cards with text and images at the bottom of the page.](./Assets/01-html-css-git-homework-demo.png)
-
-> **Note**: This layout is designed for desktop viewing, so you may notice that some of the elements don't look like the mock-up at a resolution smaller than 768px. Eventually you'll learn how to make elements responsive so that your web application is optimized for any screen size.
+```
 
 
-
-
-
-
-
-******SCREENSHOT OF FINISHED PRODUCT*****
+```
+## Screenshot(s) of finished product:
 
 
 
