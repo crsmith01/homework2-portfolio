@@ -2,17 +2,17 @@
     box-sizing: border-box;
     padding: 0;
     margin: 0;
-    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
 }
 
 body {
-    background-color: black;
-    color: snow;
+    background-color: snow;
+    color: black;
 }
 
 .header {
     padding: 20px;
-    background-color:honeydew;
+    background-color: lightblue;
     color:seagreen;
 }
 
@@ -42,6 +42,12 @@ nav a {
     align-items: flex-end;
 }
 
+.nav-heading {
+    float: inline-end;
+    display: inline-block;
+    align-items: flex-end;
+}
+
 a {
     color:purple;
     /* text-decoration: none; not necessary? */
@@ -52,6 +58,7 @@ a {
 
 p {
     font-size: 16px;
+    padding: 10px;
 }
 
 /* .hero {
@@ -80,7 +87,7 @@ p {
 }
 
 img {
-    max-height: 200px;
+    max-height: 400px;
     align-items: center;
 }
 
@@ -103,7 +110,15 @@ h2 {
 
 .profile-photo {
     box-sizing: border-box;  
+    float: left;
+    margin: 30px;
+    
     /* align-items: center;  ????? */
+}
+
+/* make this first application bigger */
+.first-project {
+    font-size: ;
 }
 
 .project {
@@ -119,17 +134,21 @@ h2 {
     font-size: 20px;
   }
   
-  .project a {
+.project a {
     border-radius: 50px 50px 0px 0px;
     padding: 20px;
   }
   
-  .project p {
+.project p {
     text-align: center;
   }
   
-  .project img {
+.project img {
     width: 100%;
+  }
+
+.contact-info {
+    color: purple;
   }
 
     /* For responsive layout - added media query for a 2 column layout instead of 4 column layout. */
