@@ -3,6 +3,7 @@
     padding: 0;
     margin: 0;
     font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    scroll-behavior: smooth;
 }
 
 body {
@@ -50,8 +51,16 @@ nav a {
 
 a {
     color:purple;
-    /* text-decoration: none; not necessary? */
 }
+
+#about-me {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.hero
+    
 
 .project a
 
@@ -118,7 +127,7 @@ h2 {
 
 /* make this first application bigger */
 .first-project {
-    font-size: ;
+    flex: 2 1 200px
 }
 
 .project {
@@ -126,8 +135,7 @@ h2 {
     border-width: 1px;
     border-radius: 50px;
     padding: 10px;
-    flex: 0 0 300px;
-    transform: rotate(5deg);
+    flex: 1 0 200px;
     box-shadow: 10px 10px 5px #aaaaaa;
     margin: 20px;
     text-align: center;
@@ -152,14 +160,32 @@ h2 {
   }
 
     /* For responsive layout - added media query for a 2 column layout instead of 4 column layout. */
-@media screen and (max-width: 900px) {
+@media screen and (max-width: 1182px) {
+    header {
+        flex-direction: column;
+    }
+
+    main {
+        flex-direction: column;
+        max-width: fit-content;
+    }
+
     .project {
         width: 100%;
     }
 }
 
 /* For responsive layout - added media query for a stack of all items instead fo 2 columns */
-@media screen and (max-width: 600px) {
+@media screen and (max-width: 768px) {
+    header {
+        flex-direction: column;
+    }
+
+    main {
+        flex-direction: column;
+        max-width: fit-content;
+    }
+
     .project {
         width: 100%;
     }
