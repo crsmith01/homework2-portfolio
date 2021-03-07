@@ -6,9 +6,10 @@
     scroll-behavior: smooth;
 }
 
-body {
-    background-color: snow;
+main {
+    background-color:snow;
     color: black;
+    align-items: center;
 }
 
 .header {
@@ -23,26 +24,13 @@ body {
     font-size: 48px;
 }
 
-.header div {
-    padding-top: 15px;
-    margin-right: 20px;
-    float: right;
-    font-size: 20px;
-}
-
 nav a {
     display: inline-block;
     padding: 20px;
     text-decoration: none;
     text-align: right;
     align-items: flex-end;
-    color: purple;
-}
-
-main {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-between;
+    color:purple;
 }
 
 #about-me {
@@ -51,26 +39,17 @@ main {
     justify-content: center;
 }
 
+
 .project a
 
 
 p {
-    font-size: 10px;
+    font-size: 15px;
     padding: 10px;
 }
 
-.float-left {
-    float: left;
-    margin-right: 25px;
-}
-
-.float-right {
-    float: right;
-    margin-left: 25px;
-}
-
 .content {
-    width: 75%;
+    width: 98%;
     display: inline-block;
     margin-left: 20px;
 }
@@ -78,6 +57,8 @@ p {
 img {
     max-height: 100px;
     align-items: center;
+    border-radius: 20px;
+    margin: 10px;
 }
 
 h2 {
@@ -92,29 +73,20 @@ h2 {
     clear: both;
     text-align: center;
 }
-.footer h2 {
-    font-size: 46px;
-    /* can this just become part of the h2 section? */
-}
 
 .profile-photo {
     box-sizing: border-box;  
-    float: left;
+    float: right;
     margin: 20px;
-    max-width: 300px;
-    max-height: 300px;
+    border-radius: 20px;
+    max-width: 400px;
+    max-height: 400px;
+    box-shadow: 10px 10px 5px grey;
 }
-
-/* make this first application bigger */
-.first-project {
-    flex: 2 1 200px;
-    max-height: 200px;
-}
-
 
 .projects {
     flex: 1;
-    background-color: snow);
+    background-color: snow;
     padding: 50px;
     display: flex;
     flex-wrap: wrap;
@@ -132,7 +104,7 @@ h2 {
     text-align: center;
     font-size: 20px;
     background-color: lightblue;
-    color: snow;
+    color:snow;
   }
   
 .project a {
@@ -151,14 +123,18 @@ h2 {
     width: 100%;
   }
 
-.contact-info {
+.project img  {
+    max-width: 200px;
+    max-height: 200px;
+}
+
+span.contact-info {
     color: purple;
   }
 
-    /* For responsive layout - added media query for a 2 column layout instead of 4 column layout. */
 @media screen and (max-width: 992px) {
     header {
-        flex-direction: column;
+        flex-wrap: wrap;
     }
 
     main {
@@ -171,7 +147,6 @@ h2 {
     }
 }
 
-/* For responsive layout - added media query for a stack of all items instead fo 2 columns */
 @media screen and (max-width: 768px) {
     header {
         flex-direction: column;
