@@ -45,3 +45,4 @@ Screenshots can be viewed here:
 
 ## Link to deployed application: 
 The deployed application can be found via this link: 
+https://crsmith01.github.io/homework2-portfolio/
