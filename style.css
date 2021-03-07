@@ -31,14 +31,18 @@ nav a {
     text-align: right;
     align-items: flex-end;
     color:purple;
+    font-size: 20px;
 }
 
-#about-me {
+h3 {
+    color: darkslateblue;
+}
+
+.float-keep-left {
     display: flex;
-    flex-direction: column;
-    justify-content: center;
+    flex-wrap: wrap;
+    float: right;
 }
-
 
 .project a
 
